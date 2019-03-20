@@ -1,0 +1,236 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>d</title><link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; padding-bottom: 70px; white-space: pre-wrap; overflow-x: visible; }
+.first-line-indent #write p .md-line { text-indent: 0px; }
+.first-line-indent #write li, .first-line-indent #write p, .first-line-indent #write p .md-line:first-child { text-indent: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write > blockquote:first-child, #write > div:first-child, #write > figure:first-child, #write > ol:first-child, #write > p:first-child, #write > pre:first-child, #write > ul:first-child { margin-top: 30px; }
+#write li > figure:first-child { margin-top: -20px; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; }
+button, input, select, textarea { color: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+h1, h2, h3, h4, h5, h6 { margin-top: 1rem; margin-bottom: 1rem; }
+p { -webkit-margin-before: 1rem; -webkit-margin-after: 1rem; -webkit-margin-start: 0px; -webkit-margin-end: 0px; }
+.mathjax-block { margin-top: 0px; margin-bottom: 0px; -webkit-margin-before: 0px; -webkit-margin-after: 0px; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px !important; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 80px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+pre { white-space: pre-wrap; }
+pre.contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+.md-fences.mock-cm { white-space: pre-wrap; }
+.show-fences-line-number .md-fences { padding-left: 0px; }
+.show-fences-line-number .md-fences.mock-cm { padding-left: 40px; }
+.CodeMirror-line { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+.footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; }
+  #write { margin-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 1cm; padding-right: 1cm; padding-bottom: 0px; break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  @page { margin: 20mm 0px; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > img:only-child { display: block; margin: auto; }
+.md-line > .md-image:only-child, p > .md-image:only-child { display: inline-block; width: 100%; text-align: center; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.mathjax-block { white-space: pre; overflow: hidden; width: 100%; }
+p + .mathjax-block { margin-top: -1.143rem; }
+.mathjax-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, tt { font-family: var(--monospace); }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.mathjax-block .MathJax_SVG_Display { text-align: center; margin: 1em 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: monospace; }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+
+
+:root { --side-bar-bg-color: #fafafa; --control-text-color: #777; }
+@font-face { font-family: "Open Sans"; font-style: normal; font-weight: normal; src: local("Open Sans Regular"), url("./github/400.woff") format("woff"); }
+@font-face { font-family: "Open Sans"; font-style: italic; font-weight: normal; src: local("Open Sans Italic"), url("./github/400i.woff") format("woff"); }
+@font-face { font-family: "Open Sans"; font-style: normal; font-weight: bold; src: local("Open Sans Bold"), url("./github/700.woff") format("woff"); }
+@font-face { font-family: "Open Sans"; font-style: italic; font-weight: bold; src: local("Open Sans Bold Italic"), url("./github/700i.woff") format("woff"); }
+html { font-size: 16px; }
+body { font-family: "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; color: rgb(51, 51, 51); line-height: 1.6; }
+#write { max-width: 860px; margin: 0px auto; padding: 20px 30px 100px; }
+#write > ul:first-child, #write > ol:first-child { margin-top: 30px; }
+body > :first-child { margin-top: 0px !important; }
+body > :last-child { margin-bottom: 0px !important; }
+a { color: rgb(65, 131, 196); }
+h1, h2, h3, h4, h5, h6 { position: relative; margin-top: 1rem; margin-bottom: 1rem; font-weight: bold; line-height: 1.4; cursor: text; }
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor { text-decoration: none; }
+h1 tt, h1 code { font-size: inherit; }
+h2 tt, h2 code { font-size: inherit; }
+h3 tt, h3 code { font-size: inherit; }
+h4 tt, h4 code { font-size: inherit; }
+h5 tt, h5 code { font-size: inherit; }
+h6 tt, h6 code { font-size: inherit; }
+h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom: 1px solid rgb(238, 238, 238); }
+h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom: 1px solid rgb(238, 238, 238); }
+h3 { font-size: 1.5em; line-height: 1.43; }
+h4 { font-size: 1.25em; }
+h5 { font-size: 1em; }
+h6 { font-size: 1em; color: rgb(119, 119, 119); }
+p, blockquote, ul, ol, dl, table { margin: 0.8em 0px; }
+li > ol, li > ul { margin: 0px; }
+hr { height: 2px; padding: 0px; margin: 16px 0px; background-color: rgb(231, 231, 231); border: 0px none; overflow: hidden; box-sizing: content-box; }
+body > h2:first-child { margin-top: 0px; padding-top: 0px; }
+body > h1:first-child { margin-top: 0px; padding-top: 0px; }
+body > h1:first-child + h2 { margin-top: 0px; padding-top: 0px; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child { margin-top: 0px; padding-top: 0px; }
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 { margin-top: 0px; padding-top: 0px; }
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p { margin-top: 0px; }
+li p.first { display: inline-block; }
+ul, ol { padding-left: 30px; }
+ul:first-child, ol:first-child { margin-top: 0px; }
+ul:last-child, ol:last-child { margin-bottom: 0px; }
+blockquote { border-left: 4px solid rgb(223, 226, 229); padding: 0px 15px; color: rgb(119, 119, 119); }
+blockquote blockquote { padding-right: 0px; }
+table { padding: 0px; word-break: initial; }
+table tr { border-top: 1px solid rgb(223, 226, 229); margin: 0px; padding: 0px; }
+table tr:nth-child(2n), thead { background-color: rgb(248, 248, 248); }
+table tr th { font-weight: bold; border-width: 1px 1px 0px; border-top-style: solid; border-right-style: solid; border-left-style: solid; border-top-color: rgb(223, 226, 229); border-right-color: rgb(223, 226, 229); border-left-color: rgb(223, 226, 229); border-image: initial; border-bottom-style: initial; border-bottom-color: initial; text-align: left; margin: 0px; padding: 6px 13px; }
+table tr td { border: 1px solid rgb(223, 226, 229); text-align: left; margin: 0px; padding: 6px 13px; }
+table tr th:first-child, table tr td:first-child { margin-top: 0px; }
+table tr th:last-child, table tr td:last-child { margin-bottom: 0px; }
+.CodeMirror-gutters { border-right: 1px solid rgb(221, 221, 221); }
+.md-fences, code, tt { border: 1px solid rgb(223, 226, 229); background-color: rgb(248, 248, 248); border-radius: 3px; font-family: Consolas, "Liberation Mono", Courier, monospace; padding: 2px 4px 0px; font-size: 0.9em; }
+.md-fences { margin-bottom: 15px; margin-top: 15px; padding: 8px 1em 6px; }
+.md-task-list-item > input { margin-left: -1.3em; }
+@media screen and (min-width: 914px) {
+}
+@media print {
+  html { font-size: 13px; }
+  table, pre { break-inside: avoid; }
+  pre { word-wrap: break-word; }
+}
+.md-fences { background-color: rgb(248, 248, 248); }
+#write pre.md-meta-block { padding: 1rem; font-size: 85%; line-height: 1.45; background-color: rgb(247, 247, 247); border: 0px; border-radius: 3px; color: rgb(119, 119, 119); margin-top: 0px !important; }
+.mathjax-block > .code-tooltip { bottom: 0.375rem; }
+#write > h3.md-focus::before { left: -1.5625rem; top: 0.375rem; }
+#write > h4.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+#write > h5.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+#write > h6.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+.md-image > .md-meta { border-radius: 3px; font-family: Consolas, "Liberation Mono", Courier, monospace; padding: 2px 0px 0px 4px; font-size: 0.9em; color: inherit; }
+.md-tag { color: inherit; }
+.md-toc { margin-top: 20px; padding-bottom: 20px; }
+.sidebar-tabs { border-bottom: none; }
+#typora-quick-open { border: 1px solid rgb(221, 221, 221); background-color: rgb(248, 248, 248); }
+#typora-quick-open-item { background-color: rgb(250, 250, 250); border-color: rgb(254, 254, 254) rgb(229, 229, 229) rgb(229, 229, 229) rgb(238, 238, 238); border-style: solid; border-width: 1px; }
+#md-notification::before { top: 10px; }
+.on-focus-mode blockquote { border-left-color: rgba(85, 85, 85, 0.12); }
+header, .context-menu, .megamenu-content, footer { font-family: "Segoe UI", Arial, sans-serif; }
+.file-node-content:hover .file-node-icon, .file-node-content:hover .file-node-open-state { visibility: visible; }
+.mac-seamless-mode #typora-sidebar { background-color: var(--side-bar-bg-color); }
+.md-lang { color: rgb(180, 101, 77); }
+.html-for-mac .context-menu { --item-hover-bg-color: #E6F0FE; }
+
+
+
+
+
+ .typora-export p, .typora-export .footnote-line {white-space: normal;} 
+</style>
+</head>
+<body class='typora-export os-windows' >
+<div  id='write'  class = 'is-node'><p><strong>OOO</strong> <strong>&quot;*</strong>*MOVE** <strong>ON</strong> <strong>CONCEPT*</strong>*&quot;**</p><p> </p><p><strong>г. Ташкент, Мирабадский  Р-н, Фаргона йули  2 проезд. д. 63. +(99897) 440-84-04  Р/с 20208000200175031001,  ИНН 302799135, ОКЭД 66120 Банк ОПЕРУ  ЧОАББ «Трастбанк»   МФО  00 491,</strong></p><p><strong><strong>__</strong><strong>__</strong><strong>__</strong><strong>__</strong><strong>__</strong><strong>__</strong><strong>__</strong><strong>__</strong><strong>__</strong><strong>__</strong><strong>__</strong></strong> </p><p> </p><p>Исх №  1279/А         <br/></p><p>От 18/03/2019</p><p> </p><p> </p><p> </p><p>应用</p><p>欢迎您受到MOC批发公司的尊重并原谅您按照DAP-Tashkent的条款计算成本和交货，如果您不向我们的地区交货，请提供仓库价格，TN VED代码和每个位置的重量（尺寸）。 提前感谢您的及时性。 </p><p>电话了解情况+998974408404 Saidazimhon。</p><p> </p><p> </p><p>技术部分</p><p> </p><p> </p><p>目录</p><p> </p><p>\ 1.目的和目的................................................................ ....................................... 3</p><p>\ 2.建筑面积和气候条件.............................. .................................... ... 3</p><p>\ 3.安装流程图说明.................................... .... ........................ 4</p><p>\ 4.单元操作的技术参数........................... .... ......... ....... ................</p><p>\ 5.对可靠性指标和设计的要求............................................................ 5</p><p>\ 6.数据表...... ................................................................................................ ............ .... 7</p><p> \ 7.交付范围和提案....................................... .............................. ............ 8</p><p>\ 8.融资.......................................... ............................................................ ...... .... ..... ..8</p><p>\ 9.预修课程................................. .. ...................................................... .. .................. .... ...... .... 9</p><p>\ 10.附件№1«沸石装置入口处原料气的组成»...... 10</p><p>\ 11.附件№2«冷却气体成分（再生）»....................................... ........... 11</p><p>\ 12.批准书.................................... .............................. ............... .. ........................ ... 12</p><p>\ 13.附件№3«沸石气体脱硫安装流程图.................................... 13</p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p><strong>I. PURPOSE AND OBJECTIVE</strong></p><p>1.1。 目前的职权范围（ToR）是为制造和供应高温球阀（96件）而开发的，以取代现有的第3，第4和第5单位的沸石气体净化装置的球阀（处理） ）在Shurtan GS。</p><p>1.2。 阀门将在高温条件下使用，在高温条件下，磨料颗粒和机械杂质含量高，循环复发非常大，每天数次，在气体温度和压力参数急剧变化的模式下。</p><p> </p><p><strong>II. CONSTRUCTION AREA  AND CLIMATIC CONDITIONS</strong></p><p> </p><p>2.1。 Site Head位于乌兹别克斯坦共和国境内。最近的定居点是Husar市。</p><p>2.2。根据KMK 2.01.01-94«项目的气候，物理和地质数据»和KMK 2.01.03-96«地震区建设»，建筑的气候条件（根据Husar定居点的位置）：</p><ul><li>室外空气温度，°С</li></ul><p>               绝对最小值 -32</p><p>绝对最大值 +55</p><ul><li>最热的月份的平均温度 +38,1</li><li>最冷月份的平均温度 -1,4</li><li>最冷的5天 -13</li></ul><p>几个月的平均温度：</p><p>               一月 +2,9</p><p>               七月 +29,9</p><ul><li>平均最低相对湿度，％</li></ul><p>             寒月 53</p><p>​             暖月  19</p><ul><li>平均风速，m / s</li></ul><p>​             寒冷期  2,5</p><p>​             温暖期 2,4</p><ul><li><p>气压hPa  950</p></li><li><p>积雪重量（I区），kg / m2   50</p></li><li><p>霜冻持续时间（低于0°），天数 19</p></li><li><p>霜深，m  0,32</p></li><li><p>有关降水的信息：</p><p>年降水量，mm  326
+每日降水量最高，mm  47
+年度积雪天数  20
+每年有雷暴天数16</p></li><li><p>每年沙尘暴的天数 9</p></li><li><p>风压，kgf / m2 38,0</p></li><li><p>使土壤坍塌，对混凝土涂层具有侵蚀性</p></li><li><p>施工现场的地震活动，规模为MSK-64</p></li><li><p>地震活动的土壤类别  III<br/></p></li><li><p>土壤的添加剂属性类型  II </p></li><li><p>估计土壤条件下场地的地震活动性 8</p></li><li><p>波罗的海海拔高度，m 431</p></li></ul><p> </p><p><strong>III. DESCRIPTION OF THE FLOW DIAGRAM OF THE INSTALLATION </strong>安装流程图说明</p><p><strong>(以单个沸石气体脱硫为例） </strong></p><p>基于通过固体吸附剂 - 吸附剂选择性萃取上述杂质，通过吸收法产生来自硫化氢和脱水的天然气净化（汽提）。 СаА（5А）型合成沸石在安装时用作吸附剂。</p><p>一个单位的沸石脱硫装置由八个并行的吸附器组成。在吸附的同时，有六个并行的吸附器，一个吸附器正在再生，一个在冷却。为了从硫化氢和水分中纯化，天然气在安装低温气体分离后进入沸石装置（单元）。每个吸附器配备5输入和输出球阀Du 200 Ru80，以控制工艺过程（吸附，再生和冷却）。</p><p>在该装置中，气体有两个同时输入的分离器E-1/1，E-1/2。在滴加液体分离后，从上至下以吸附模式在六个并行吸附器中提供组合气流。来自吸附器的净化和除湿气体进入过滤器 - 灰尘收集器F-1/1，F-1/2，设计用于从小颗粒吸附剂中净化气体。过滤后，干燥的净化气体从商业气体的部门间收集器进行进一步深加工到丙烷 - 丁烷混合物生产装置。</p><p>吸附剂的冷却和再生由纯化气体进行，在安装丙烷 - 丁烷混合物制剂后从压缩的商业气体中提取或从沸石脱硫车间排出。通过回流到净化气体的主流来进行冷却和再生气体的供应。</p><p>用于再生的干燥净化气体在循环开始时用于冷却吸附器中;在传热过程中加热的气体，在吸附器中始终沿废热交换器T-1 / 1.2的管侧通过，并在炉线圈P-1中供给。在炉子中加热，气体流入再生气体收集器并送到吸附器进行再生。在通过吸附器后，气体被硫化氢，水蒸气饱和，并在热交换器T-1 / 1.2的壳侧供应。再生气体在空气冷却装置中冷却，并在1,2级的胺脱硫装置中供应以进一步纯化。</p><p>通过打开和/或关闭安装在吸附器的进出管上的适当球阀来进行吸附器模式“吸附 - 再生 - 冷却”的切换。</p><p>附有单位的工艺流程图（附件№3）</p><p> </p><p><strong>IV. 单元操作的技术参数</strong></p><p>4.1. 单元操作的技术参数如表1所示。</p><p>表1.</p><figure><table><thead><tr><th><strong>№</strong></th><th><strong>Parameter name</strong></th><th><strong>Value</strong></th></tr></thead><tbody><tr><td>1.</td><td>天然气压力，用于净化/干燥，kgf /сm2（МPа）</td><td>50,476 (4,95)</td></tr><tr><td>2.</td><td>天然气温度，用于净化/干燥，°С</td><td>45</td></tr><tr><td>3.</td><td>天然气的流量，服务安装（单位），没有，比thous。Sм3/小时</td><td>500,0</td></tr><tr><td>4.</td><td>天然气的组成，用于净化/干燥，</td><td>见附录№1</td></tr><tr><td>5.</td><td>安装时的吸附器数量</td><td>8 吸附</td></tr><tr><td>6.</td><td>安装吸附器的操作方式</td><td>6 -in吸附模式1-在冷却模式1-in再生模式</td></tr><tr><td>7.</td><td>吸附器的操作循环</td><td>在吸附模型 -  12小时。 在冷却模式 -  2小时。 在冷却模式 -  2小时。</td></tr><tr><td>8.</td><td>冷却气体的组成（再生）</td><td>见附录№2</td></tr><tr><td>9.</td><td>再生气压，kgf /сm2（МPа）</td><td>45,887 (4,5)</td></tr><tr><td>10.</td><td>再生气体温度，°С</td><td>310÷350</td></tr><tr><td>11.</td><td>再生气体的流量<br>  - 冷却，thous。 Sм3/小时 <br>  - 加热，thous。Sм3/小时</td><td>- 70,0    <br>- 70,0</td></tr></tbody></table></figure><p> </p><p><strong>V.</strong> <strong>Requirements  to reliability indices and design</strong></p><p>5.1. Ball valves must conform to regulatory safety requirements of industrial pipeline valves;</p><p>5.2. They shall have explosion-proof design;</p><p>5.3. Ball valves should be delivered complete, tested and ensuring re-activation without disassembly;</p><p>5.4. Ball valves shall be completed with necessary documentation, including data sheet, technical description, operation manual, factory test protocols;</p><p>5.5. Ball valves shall be marked (on the ball valve, rated pressure, nominal diameter, material grade and factory or inventory number);</p><p>5.6. Ball valve design must ensure minimum wear of the ball and seats in the presence of abrasive particles and corrosive components under high temperature</p><p>5.7. Valve construction  should provide tight shut-off at any flow direction of the environment. Application of seat should exclude thermal expansion of the metal from which it is produced.</p><p>5.8. Valve covering should be durable according to table with the requirements for the used material (Table №2). </p><p>5.9. Access to ball on top. Inspection and repair of ball valve without dismantling shall be possible, to simplify maintenance.</p><p>5.10. Possibility to open/close manually ball valve through hydraulic hand pump shall be provided. Full time of manual opening/closing should not exceed 10 minutes.</p><p>5.11. Specified  life time is not less than 20 years.</p><p>The warranty period of ball valves must be at least 3 years after commissioning.</p><p>5.12.Opening/closing cycles must not be less than 30 000 in the warranty period.</p><p>5.13. When closing, absolute tightness of sealing shall be provided at low and high pressure differentials, in any direction of environment flow.</p><p>5.14. Design of the ball valve must be flame resistant and must be supported by certificates that conform to international norms and standards.</p><p>5.15. There shall be possibility of seal certification without dismantling and significant disassembly of the ball valve. There shall be possibility of certification of stuffing box seal against gas density. Design of stuffing box seal should exclude environment leakage. </p><p>5.16. Ball valves body shall be solid-cast, not detachable.</p><p>5.17. Ball valves materials shall conform to table no. 2,  use of similar materials, not worsening performance, is allowed.</p><p>5.18. Dimensions and weight of the ball valve must allow mounting it without changes to the existing pipe racks of the installation units of zeolite purification from hydrogen sulfide.</p><p>5.19. Calculation, fabrication, testing and commissioning of the equipment must be carried out by the manufacturer&#39;s standards, but not below the requirements of the relevant State standards or other international standards</p><p>5.20. Ball valves surface must be protected by temperature-resistant anti-corrosion coatings.</p><p>5.21. Ball valves must be new, with year of manufacture not earlier than 2018, neither previously used, nor restored.</p><p> </p><p><strong>I.</strong>       <strong>Data sheet. Basic requirements for high-temperature ball valves with hydraulic pneumatic actuator.</strong></p><p> </p><figure><table><thead><tr><th>&nbsp;</th><th><strong>Standard size and number</strong></th><th><strong>Du 200 Ru 80 – 96 pcs</strong></th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th></tr></thead><tbody><tr><td><strong>Installation location: ZGD Zeolite gas   desulfurization of 3,4 units</strong></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><strong>Valve type:</strong></td><td><strong>Flush type with two-way feed of operating   environment.</strong></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><strong>Tightness</strong></td><td><strong>Tightness in accordance with GOST 9544-2005, class</strong> <strong>А</strong></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><strong>Rated pressure, MPa</strong></td><td><strong>8,0</strong></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><strong>Operation pressure, MPa</strong></td><td><strong>from 0 to 6,3</strong></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><strong>Differential pressure in closed position ∆*</strong>*Р** <strong>max*</strong>*/<strong></strong>min<strong></strong>,** <strong>MPa</strong></td><td><strong>0,0- 6,3</strong></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><strong>Environment</strong></td><td><strong>Natural gas</strong></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><strong>Temperature of operating environment min/max., °*</strong>*С**</td><td><strong>from  +40°*</strong>*С** <strong>(adsorption) to + 400°*</strong>*С<strong></strong>(regeneration)**</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><strong>Pipe size (material), mm</strong></td><td><strong>Ø325 219*</strong>*х<strong></strong>16,  abut. 20   according to GOST 8732-78** <strong>В*</strong>*20    (with transition to Ø219)**</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><strong>Maximum allowable overall and connection dimensions   (length x width x height), mm</strong></td><td><strong>838 х 2135 х 1310</strong></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><strong>Weight of ball valves not more than, kg</strong></td><td><strong>1200 (taking into account</strong> <strong>Hydraulic pneumatic drive*</strong>*)**</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><strong>Type of connection, (e.g., flange) with counter   flanges, without</strong></td><td><strong>Welded, without flange,</strong></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><strong>Drive</strong></td><td><strong>Manual (hydraulic pump)</strong></td><td>Х</td><td><strong>Manual (ampl.)</strong></td><td>&nbsp;</td><td><strong>Worm-*</strong>*riven**</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><strong>Pneumatic</strong></td><td>&nbsp;</td><td><strong>Supply pressure (pulse gas)</strong>   <strong>0,4-0,6 MPa</strong></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><strong>Hydraulic pneumatic</strong></td><td><strong>Х</strong></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><strong>Electric</strong></td><td>&nbsp;</td><td><strong>U=            В,    I=             А</strong></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><strong>Drive</strong></td><td><strong>Hydraulic</strong> <strong>pneumatic*</strong>*,** <strong>Supply pressure (pulse gas)</strong>    <strong>0,4-0,6 MPa,   with hand gear (hydraulic pump)</strong></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><strong>Additional drive units</strong></td><td><strong>Positioner</strong></td><td>&nbsp;</td><td><strong>Pneumatic</strong></td><td>&nbsp;</td><td><strong>Input signal</strong></td><td><strong>МPa</strong></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><strong>Electric</strong></td><td><strong>Х</strong></td><td><strong>mA</strong></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><strong>Distributor (solenoid valve)</strong></td><td>&nbsp;</td><td><strong>Pneumatic</strong></td><td><strong>Х</strong></td><td><strong>0,3   МPa</strong></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td><strong>Electric</strong></td><td><strong>Х</strong></td><td><strong>24 V</strong></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><strong>Limit switch</strong></td><td>&nbsp;</td><td><strong>Pneumatic</strong></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td><strong>Electric</strong></td><td><strong>Х</strong></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><strong>For valve with pneumatic drive</strong></td><td><strong>Without return device</strong></td><td><strong>Х</strong></td><td><strong>NO</strong></td><td>&nbsp;</td><td><strong>NC</strong></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><strong>With hand gear</strong></td><td><strong>Х</strong></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table></figure><p><img src='file:///C:\Users\Y84108~1\AppData\Local\Temp\msohtmlclip1\01\clip_image001.gif' alt='img' referrerPolicy='no-referrer' /></p><p><img src='file:///C:\Users\Y84108~1\AppData\Local\Temp\msohtmlclip1\01\clip_image002.gif' alt='img' referrerPolicy='no-referrer' /></p><p><img src='file:///C:\Users\Y84108~1\AppData\Local\Temp\msohtmlclip1\01\clip_image003.gif' alt='img' referrerPolicy='no-referrer' /></p><p>Not needed                                needed </p><p> </p><p> </p><p><strong>Requirements</strong> <strong>for</strong> <strong>material</strong> <strong>of construction</strong></p><p>Table №2</p><figure><table><thead><tr><th>№</th><th>Name of the ball valve part</th><th>Material</th><th>Standard of material manufacturing</th></tr></thead><tbody><tr><td>1</td><td>Body</td><td>Carbon steel</td><td>ASTM A216 gr.WCB</td></tr><tr><td>2</td><td>Ball</td><td>stainless steel + hard chrome</td><td>ASTM A351 gr. CF8M+HCr</td></tr><tr><td>3</td><td>Seat</td><td>stainless steel + Stellite</td><td>AISI316+ALLOY12</td></tr><tr><td>4</td><td>Pin</td><td>low alloy steel</td><td>ASTM A320 gr.</td></tr><tr><td>5</td><td>Hexagon nut</td><td>low alloy steel</td><td>ASTM A194 gr.</td></tr><tr><td>6</td><td>Gaskets</td><td>graphite</td><td>ASTM В 637</td></tr><tr><td>7</td><td>Trim</td><td>stainless steel</td><td>Type AISI316</td></tr><tr><td>8</td><td>Ring</td><td>stainless steel</td><td>Type AISI316</td></tr></tbody></table></figure><p> </p><p> </p><p><strong>VI. SCOPE OF DELIVERY AND PROPOSAL:</strong></p><p>6.1. Scope of delivery shall include:</p><p>- The Supplier undertakes to deliver the goods within 60 calendar days from the moment of signing the contract.</p><p>- Ball valves with technical documentation, including data sheet, technical description, operation manual, and factory test protocols;</p><p>- Ball valves shall be supplied with mounted hydraulic pneumatic drive, tested; depreservation should be made without disassembly;<br/></p><p>- Technical services: commissioning and supervision-installation activity;      <br/></p><p>- Additional equipment, materials, services, know-how and licenses, necessary for installation, commissioning, and operation of ball valves.</p><p><strong>6.2. Additional equipment, materials, services, know-how and licenses, necessary for installation, start-up and operation, include:</strong></p><p>- special fixed equipment, devices and tools for repairs;</p><p>- spare parts for the period of commissioning and SPTA  for 2 years of operation;</p><p>Proposal shall include the following:</p><ul><li>technical description and justification of the proposed equipment with included and support systems and its pipework system;</li><li>set of design documentation;</li><li>scope of delivery, total weight of the delivered equipment and SPARE PARTS list for commissioning and 2 years of operation;</li><li>a questionnaire with a list of questions to obtain information from the buyer for  detailed design of process and equipment;</li><li>Supervising installation and commissioning.</li><li>information on safety and security of equipment during transportation;</li><li>submitted technical proposal shall be prepared in the State or Russian language and duplicated in English;</li><li>submitted technical proposal should also be submitted in electronic form (CD/DVD or USB media);</li><li>it is necessary to provide certificates (international certificates ISO-9001, 14001, OHSAS 18001, АРI manufacturer&#39;s quality certificate and/or other certificates of internationally recognized laboratories and test centres);</li><li>it is necessary to provide reference list of the company (with customer contacts and summary information),  it is necessary to specify public domain information about company- producer (company site);</li><li>consumption parameters of energy sources;</li></ul><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p><strong>Composition of feedstock gas at the inlet of zeolite installation</strong></p><figure><table><thead><tr><th><strong>№</strong></th><th><strong>Gas components</strong></th><th><strong>Mole %</strong></th></tr></thead><tbody><tr><td>1</td><td>methane (СН4)</td><td>90,502</td></tr><tr><td>2</td><td>Ethan (С2Н6)</td><td>3,995</td></tr><tr><td>3</td><td>propane (С3Н8)</td><td>0,979</td></tr><tr><td>4</td><td>ISO-Butane (i-С4Н10)</td><td>0,2</td></tr><tr><td>5</td><td>n-butane (n-С4Н10)</td><td>0,25</td></tr><tr><td>6</td><td>hydrocarbons С5+В</td><td>0,31</td></tr><tr><td>7</td><td>carbon dioxide (СО2)</td><td>2,766</td></tr><tr><td>8</td><td>hydrogen sulfide (H2S)</td><td>0,19</td></tr><tr><td>9</td><td>nitrogen (N2)</td><td>0,769</td></tr><tr><td>10</td><td>Water (Н2О)</td><td>0,04</td></tr><tr><td>10</td><td><strong>Total</strong></td><td><strong>100,00</strong></td></tr></tbody></table></figure><p> </p><p>** Content of mechanical impurities in purified gas 0,004 g/m3 </p><p> </p><p> </p><p> </p><p> </p><p><strong>Composition of cooling gas (regeneration)</strong> </p><p> </p><figure><table><thead><tr><th><strong>№</strong></th><th><strong>Gas components</strong></th><th><strong>Cooling, mole %</strong></th><th><strong>Regenerations,</strong>    <strong>mole %</strong></th></tr></thead><tbody><tr><td>1</td><td>methane (СН4)</td><td>91,730</td><td>90,248</td></tr><tr><td>2</td><td>Ethan (С2Н6)</td><td>4,070</td><td>4,004</td></tr><tr><td>3</td><td>propane (С3Н8)</td><td>0,62</td><td>0,610</td></tr><tr><td>4</td><td>ISO-Butane (i-С4Н10)</td><td>0,08</td><td>0,079</td></tr><tr><td>5</td><td>n-butane (n-С4Н10)</td><td>0,08</td><td>0,079</td></tr><tr><td>6</td><td>hydrocarbons С5+В</td><td>0,04</td><td>0,039</td></tr><tr><td>7</td><td>carbon dioxide (СО2)</td><td>2,570</td><td>2,528</td></tr><tr><td>8</td><td>hydrogen sulfide (H2S)</td><td>0,00</td><td>1,335÷2,50</td></tr><tr><td>9</td><td>nitrogen (N2)</td><td>0,81</td><td>0,797</td></tr><tr><td>10</td><td>Water (Н2О)</td><td>0,00</td><td>0,281</td></tr><tr><td>&nbsp;</td><td><strong>Total</strong></td><td><strong>100,00</strong></td><td><strong>100,00</strong></td></tr><tr><td>&nbsp;</td><td>Molecular weight:</td><td><strong>17,7</strong></td><td><strong>17,9</strong></td></tr><tr><td>&nbsp;</td><td>Density kg/m3:</td><td><strong>0,7501</strong></td><td><strong>0,7595</strong></td></tr></tbody></table></figure><p> </p><p> </p><p> </p><p>Flow chart of installation of zeolite gas desulfurization (ZGD)</p><p>Условные обозначения - Legend                                                  Газ регенерации- Regeneration gas</p><p>Природный газ - Natural gas           Газ регенерации, выходящий из печи- Regeneration gas coming out of the furnace</p><p>Очищеннный газ –purified gas                                                        Газ охлаждения в печи gas of cooling in the furnace</p><p><img src='file:///C:\Users\Y84108~1\AppData\Local\Temp\msohtmlclip1\01\clip_image005.jpg' alt='ЦСО 1- блок технологик тархи' referrerPolicy='no-referrer' />Топливный газ -Fuel gas                                                                 оборотная вода- back water</p><p>Сброс газа на факел  -flare relief                                                      газовый конденсат- gas condensate</p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p><img src='file:///C:\Users\Y84108~1\AppData\Local\Temp\msohtmlclip1\01\clip_image007.jpg' alt='img' referrerPolicy='no-referrer' /></p><p> </p><p>ОТ СОТРУДНИЧЕСТВА К ПАРТНЕРСТВУ </p><p><strong>С уважением  директор                                                                Мухамедов С.А.</strong><br/></p><p> </p><p> </p><p> </p></div>
+</body>
+</html>
